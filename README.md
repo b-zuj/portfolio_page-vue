@@ -7,21 +7,21 @@ This project was created with two goals in mind:
 1. create a page where I can present myself and my projects 
 2. learn Vue.js framework
 
+## Tech/framework used
+<b>Built with</b>
+- [Vue.js](https://vuejs.org/)
+
 ## Available Scripts
 In the project directory, you can run:
 
 > `npm install` - project setup
+
 > `npm run serve` - compiles and hot-reloads for development
 
-### Compiles and minifies for production
-```
-npm run build
-```
+> `npm run build` - compiles and minifies for production
 
-### Lints and fixes files
-```
-npm run lint
-```
+> `npm run lint` - lints and fixes files
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## License
+MIT © [Barbara Zujewska]()
