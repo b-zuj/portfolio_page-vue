@@ -1,24 +1,33 @@
-# portfolio_page
+# Portfolio page in Vue
 
-## Project setup
-```
-npm install
-```
+[![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This project was created with two goals in mind:
+1. create a page where I can present myself and my projects 
+2. learn Vue.js framework
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Deployment
 
-### Lints and fixes files
-```
-npm run lint
-```
+The page is temporarly deploed on Netlify - [bzuj-portfolio.netlify.app](https://bzuj-portfolio.netlify.app/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Once the project reaches satisfactory stage of development it will be moved to custom domain - zujewska.com.
+
+## Tech/framework used
+<b>Built with</b>
+- [Vue.js](https://vuejs.org/)
+
+## Available Scripts
+In the project directory, you can run:
+
+> `npm install` - project setup
+
+> `npm run serve` - compiles and hot-reloads for development
+
+> `npm run build` - compiles and minifies for production
+
+> `npm run lint` - lints and fixes files
+
+
+## License
+MIT © [Barbara Zujewska]()
