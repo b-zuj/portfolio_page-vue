@@ -7,6 +7,12 @@ This project was created with two goals in mind:
 1. create a page where I can present myself and my projects 
 2. learn Vue.js framework
 
+## Deployment
+
+The page is temporarly deploed on Netlify - [bzuj-portfolio.netlify.app](https://bzuj-portfolio.netlify.app/)
+
+Once the project reaches satisfactory stage of development it will be moved to custom domain - zujewska.com.
+
 ## Tech/framework used
 <b>Built with</b>
 - [Vue.js](https://vuejs.org/)
