@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Skils',
+  name: 'Projects',
   props: {
     content: {
       type: Object,
