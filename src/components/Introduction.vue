@@ -1,4 +1,5 @@
 <template>
+  <h3>Fact sheet</h3>
   <table>
     <tr v-for="(value, propertyName, index) in content" v-bind:key="index">
       <th>{{ propertyName }}:</th>
@@ -26,10 +27,7 @@ export default {
     },
   },
   mounted () { 
-      for (const [key, value] of Object.entries(this.content)) {
-        console.log(typeof value);
-        console.log(key);
-    }
+    console.log('Introduction received content');
   }
 }
 </script>

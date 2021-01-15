@@ -2,23 +2,23 @@
   <img alt="Vue logo" src="./assets/logo.png"> 
   <Welcome  :content="welcomeMsg" />
   <Introduction :content="factSheetData" />
-  <!-- <Skils :content="webTechSkils" /> -->
-  <!-- <Projects :content="projectsData" /> -->
+  <Skils :content="webTechSkils" />
+  <Projects :content="projectsData" />
 </template>
 
 <script>
 import Welcome from './components/Welcome.vue'
 import Introduction from './components/Introduction.vue'
-// import Skils from './components/Skils.vue'
-// import Projects from './components/Projects.vue'
+import Skils from './components/Skils.vue'
+import Projects from './components/Projects.vue'
 
 export default {
   name: 'App',
   components: {
     Welcome,
     Introduction,
-    // Skils,
-    // Projects
+    Skils,
+    Projects
   },
   data() {
     return {
@@ -82,10 +82,78 @@ export default {
         },
       },
       webTechSkils: {
-        languages: ['JavaScript'],
-        backend: ['Node', 'Express', 'PostgreSQL', 'MongoDB'],
-        frontend: ['HTML5', 'CSS3', 'React', 'Redux'],
-        other: ['GitHub'],
+        languages: {
+          'JavaScript': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/javascript.svg',
+            link: 'https://www.javascript.com/',
+          },
+        },
+        backend: {
+          'Node': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/nodejs-icon.svg',
+            link: 'https://nodejs.org/',
+          },
+          'Express': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/express.svg',
+            link: 'https://expressjs.com/',
+          },
+          'PostgreSQL': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/postgresql.svg',
+            link: 'https://www.postgresql.org/',
+          },
+          'MongoDB': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/mongodb-icon.svg',
+            link: 'https://www.mongodb.org/',
+          },
+        },
+        frontend: {
+          'HTML5': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/html-5.svg',
+            link: 'https://www.w3.org/TR/html5/',
+          },
+          'CSS3': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/css-3.svg',
+            link: 'https://www.w3.org/TR/CSS/',
+          },
+          'React': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/react.svg',
+            link: 'https://reactjs.org/',
+          },
+          'Redux': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/redux.svg',
+            link: 'https://redux.js.org/',
+          },
+          'Vue': {
+            logo: '../assets/logo.png',
+            link: 'https://vuejs.org/',
+          },
+        },
+        other: {
+          'GitHub': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/github-icon.svg',
+            link: 'https://github.com/',
+          },
+          'ESlint': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/eslint.svg',
+            link: 'https://eslint.org/',
+          },
+          'Mocha': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/mocha.svg',
+            link: 'https://mochajs.org/',
+          },
+          'Netlify': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/netlify.svg',
+            link: 'https://www.netlify.com/',
+          },
+          'Heroku': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/heroku-icon.svg',
+            link: 'https://www.heroku.com/',
+          },
+          'AWS': {
+            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/aws.svg',
+            link: 'https://aws.amazon.com/',
+          },
+        },
       },
       contactLinks: {
         GitHub: 'https://github.com/b-zuj',
