@@ -1,5 +1,5 @@
 <template>
-  <h2>{{ content.heading }}</h2>
+  <h1>{{ content.heading }}</h1>
   <p>{{ content.msg }}</p>
 </template>
 

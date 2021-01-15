@@ -1,5 +1,5 @@
 <template>
-  <h3>Fact sheet</h3>
+  <h2>Fact sheet</h2>
   <table>
     <tr v-for="(value, propertyName, index) in content" v-bind:key="index">
       <th>{{ propertyName }}:</th>
@@ -9,7 +9,6 @@
       <th v-else>{{ value }}</th>
     </tr>
   </table>
-  <!-- <p>{{ content }}</p> -->
 </template>
 
 <script>

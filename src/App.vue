@@ -1,5 +1,4 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png"> 
   <Welcome  :content="welcomeMsg" />
   <Introduction :content="factSheetData" />
   <Skils :content="webTechSkils" />
@@ -45,7 +44,7 @@ export default {
           tech: 'Vue.js',
           github: 'https://github.com/b-zuj/portfolio_page-vue',
           link: '',
-          forntend: '',
+          frontend: '',
           backend: '',
         },
         'PhysIO web app': {
@@ -53,7 +52,7 @@ export default {
           tech: 'React, Redux, REST, MongoDB',
           github: '',
           link: '',
-          forntend: 'https://github.com/MaciejGL/final-project-frontend',
+          frontend: 'https://github.com/MaciejGL/final-project-frontend',
           backend: 'https://github.com/MaciejGL/final-project-backend',
         },
         'Baking recipes blog': {
@@ -61,7 +60,7 @@ export default {
           tech: 'React, REST',
           github: '',
           link: '',
-          forntend: 'https://github.com/b-zuj/recipes-blog-frontend',
+          frontend: 'https://github.com/b-zuj/recipes-blog-frontend',
           backend: 'https://github.com/b-zuj/recipes-blog-backend',
         },
         'SPA gallery page': {
@@ -69,7 +68,7 @@ export default {
           tech: 'Vanila JS, REST',
           github: '',
           link: 'https://spa-gallery-frontend.netlify.app/',
-          forntend: 'https://github.com/b-zuj/spa-gallery-frontend',
+          frontend: 'https://github.com/b-zuj/spa-gallery-frontend',
           backend: 'https://github.com/b-zuj/spa-gallery-backend',
         },
         'ToDo app': {
@@ -77,83 +76,35 @@ export default {
           tech: 'React',
           github: 'https://github.com/b-zuj/todo-react',
           link: '',
-          forntend: '',
+          frontend: '',
           backend: '',
         },
       },
       webTechSkils: {
-        languages: {
-          'JavaScript': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/javascript.svg',
-            link: 'https://www.javascript.com/',
-          },
-        },
-        backend: {
-          'Node': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/nodejs-icon.svg',
-            link: 'https://nodejs.org/',
-          },
-          'Express': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/express.svg',
-            link: 'https://expressjs.com/',
-          },
-          'PostgreSQL': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/postgresql.svg',
-            link: 'https://www.postgresql.org/',
-          },
-          'MongoDB': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/mongodb-icon.svg',
-            link: 'https://www.mongodb.org/',
-          },
-        },
-        frontend: {
-          'HTML5': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/html-5.svg',
-            link: 'https://www.w3.org/TR/html5/',
-          },
-          'CSS3': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/css-3.svg',
-            link: 'https://www.w3.org/TR/CSS/',
-          },
-          'React': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/react.svg',
-            link: 'https://reactjs.org/',
-          },
-          'Redux': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/redux.svg',
-            link: 'https://redux.js.org/',
-          },
-          'Vue': {
-            logo: '../assets/logo.png',
-            link: 'https://vuejs.org/',
-          },
-        },
-        other: {
-          'GitHub': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/github-icon.svg',
-            link: 'https://github.com/',
-          },
-          'ESlint': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/eslint.svg',
-            link: 'https://eslint.org/',
-          },
-          'Mocha': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/mocha.svg',
-            link: 'https://mochajs.org/',
-          },
-          'Netlify': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/netlify.svg',
-            link: 'https://www.netlify.com/',
-          },
-          'Heroku': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/heroku-icon.svg',
-            link: 'https://www.heroku.com/',
-          },
-          'AWS': {
-            logo: 'https://github.com/tomchen/stack-icons/blob/master/logos/aws.svg',
-            link: 'https://aws.amazon.com/',
-          },
-        },
+        languages: [
+          'JavaScript',
+        ],
+        backend: [
+          'Node',
+          'Express',
+          'PostgreSQL',
+          'MongoDB'
+        ],
+        frontend: [
+          'HTML5',
+          'CSS3',
+          'React',
+          'Redux',
+          'Vue',
+        ],
+        other: [
+          'GitHub',
+          'ESlint',
+          'Mocha',
+          'Netlify',
+          'Heroku',
+          'AWS',
+        ],
       },
       contactLinks: {
         GitHub: 'https://github.com/b-zuj',
@@ -162,7 +113,11 @@ export default {
     }
   }
 }
+
+
 </script>
+
+Vue.config.devtools = true;
 
 <style>
 #app {
