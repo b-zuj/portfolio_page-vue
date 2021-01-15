@@ -1,11 +1,12 @@
 <template>
-  <h1>{{ content.heading }}</h1>
-  <p>{{ content.msg }}</p>
+  <ul v-for="(value, index) in content" v-bind:key="index">
+    <li>{{ value }}</li>
+  </ul>
 </template>
 
 <script>
 export default {
-  name: 'Welcome',
+  name: 'List',
   props: {
     content: {
       type: Object,
@@ -13,8 +14,8 @@ export default {
     },
   },
   mounted () { 
-    console.log(this.content)
-  }
+      console.log('List received content')
+    }
 }
 </script>
 
