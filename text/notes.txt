@@ -1,0 +1,55 @@
+Hi, I'm Barbara!
+I'm a full stack web developer with keen interest in AI and Big Data. 
+
+
+Fact sheet:
+  Nationality: Polish
+  Residing: Oslo, Norway
+  Background: industrial management (BEng), marketing and data analytics (Double MSc)
+  Strong suits:
+    I'm a quick learner with a can-do attitude - tell me what you need and I will figure out how to make it work. 
+    Exceptional presentation skills, gained over years of presenting for audiences with various background and knowlege of the subject.
+    Unique perspective thanks to the background in management, engineering, and marketing.
+    True team player who is not afraid to speak up and take the lead when needed.
+    Extensive international communication experience after studying and living in an international environment for over 10 years.
+  Free time: baking, traveling, jigsaw puzzles, obsesssing over my cat
+
+
+
+Main dev tools:
+
+  JavaScript
+
+  Node
+  Express
+  PostgreSQL
+  MongDB
+
+  HTML5
+  CSS3
+  React
+  Redux
+
+  GitHub
+
+Projects:
+
+Portfolio page in Vue
+
+PhysIO in React with REST backend and MongDB 
+
+Baking recipes blog in React
+
+ToDo app in React
+
+SPA gallery app in vanila JS 
+
+
+
+Contact
+
+GitHub
+LinkedIn
+
+
+
