@@ -33,45 +33,49 @@ export default {
           True team player who is not afraid to speak up and take the lead when needed.
           Extensive international communication experience after studying and living in an international environment for over 10 years.
         `,
-        'Free time': 'baking, traveling, jigsaw puzzles, obsesssing over my cat'
+        'Free time': 'baking, traveling, jigsaw puzzles, obsesssing over my cat',
         },
       projectsData: {
         'Portfolio page': {
           description: 'bla bla',
           tech: 'Vue.js',
           github: '',
-          link: ''
+          link: '',
         },
         'PhysIO web app': {
           description: 'bla bla',
           tech: 'React, Redux, REST, MongoDB',
           github: '',
-          link: ''
+          link: '',
         },
         'Baking recipes blog': {
           description: 'bla bla',
           tech: 'React, REST',
           github: '',
-          link: ''
+          link: '',
         },
         'SPA gallery page': {
           description: 'bla bla',
           tech: 'Vanila JS, REST',
           github: '',
-          link: ''
+          link: '',
         },
         'ToDo app': {
           description: 'bla bla',
           tech: 'React',
           github: '',
-          link: ''
-        }
+          link: '',
+        },
       },
       webTechSkils: {
         languages: ['JavaScript'],
         backend: ['Node', 'Express', 'PostgreSQL', 'MongoDB'],
         frontend: ['HTML5', 'CSS3', 'React', 'Redux'],
-        other: ['GitHub']
+        other: ['GitHub'],
+      },
+      contactLinks: {
+        GitHub: '',
+        LinkedIn: '',
       },
     }
   }
