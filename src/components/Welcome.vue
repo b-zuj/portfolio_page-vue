@@ -1,14 +1,19 @@
 <template>
-  <h2>{{ heading }}</h2>
-  <p>{{ msg }}</p>
+  <h2>{{ content.heading }}</h2>
+  <p>{{ content.msg }}</p>
 </template>
 
 <script>
 export default {
   name: 'Welcome',
   props: {
-    heading: String,
-    msg: String
+    content: {
+      type: Object,
+      default: () => ({})
+    },
+  },
+  mounted () { 
+    console.log(this.content)
   }
 }
 </script>
