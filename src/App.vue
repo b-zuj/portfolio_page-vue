@@ -2,23 +2,23 @@
   <img alt="Vue logo" src="./assets/logo.png"> 
   <Welcome  :content="welcomeMsg" />
   <Introduction :content="factSheetData" />
-  <Skils :content="webTechSkils" />
-  <Projects :content="projectsData" />
+  <!-- <Skils :content="webTechSkils" /> -->
+  <!-- <Projects :content="projectsData" /> -->
 </template>
 
 <script>
 import Welcome from './components/Welcome.vue'
 import Introduction from './components/Introduction.vue'
-import Skils from './components/Skils.vue'
-import Projects from './components/Projects.vue'
+// import Skils from './components/Skils.vue'
+// import Projects from './components/Projects.vue'
 
 export default {
   name: 'App',
   components: {
     Welcome,
     Introduction,
-    Skils,
-    Projects
+    // Skils,
+    // Projects
   },
   data() {
     return {
@@ -30,17 +30,18 @@ export default {
         Nationality: 'Polish',
         Residing: 'Oslo, Norway',
         Background: 'industrial management (BEng), marketing and data analytics (Double MSc)',
-        'Strong suits': `<ul>
-            <li>I'm a quick learner with a can-do attitude - tell me what you need and I will figure out how to make it work.</li>
-            <li>Exceptional presentation skills, gained over years of presenting for audiences with various background and knowlege of the subject.</li>
-            <li>Unique perspective thanks to the background in management, engineering, and marketing.</li><li>True team player who is not afraid to speak up and take the lead when needed.</li>
-            <li>Extensive international communication experience after studying and living in an international environment for over 10 years.</li>
-          </ul>`,
+        'Strong suits': [
+          `I'm a quick learner with a can-do attitude - tell me what you need and I will figure out how to make it work.`,
+          'Exceptional presentation skills, gained over years of presenting for audiences with various background and knowlege of the subject.',
+          'Unique perspective thanks to the background in management, engineering, and marketing.',
+          'True team player who is not afraid to speak up and take the lead when needed.',
+          'Extensive international communication experience after studying and living in an international environment for over 10 years.',
+          ],
         'Free time': 'baking, traveling, jigsaw puzzles, obsesssing over my cat',
         },
       projectsData: {
         'Portfolio page': {
-          description: 'bla bla',
+          description: 'Created portfolio page to showcase myself, my projects, and learn Vue in the process.',
           tech: 'Vue.js',
           github: 'https://github.com/b-zuj/portfolio_page-vue',
           link: '',
@@ -48,7 +49,7 @@ export default {
           backend: '',
         },
         'PhysIO web app': {
-          description: 'bla bla',
+          description: 'App for physiotherapists to connect and follow up with their patients. This is my final, two-week project at Salt creating with Maciej Głowacki and Stian Klasbu.',
           tech: 'React, Redux, REST, MongoDB',
           github: '',
           link: '',
@@ -56,7 +57,7 @@ export default {
           backend: 'https://github.com/MaciejGL/final-project-backend',
         },
         'Baking recipes blog': {
-          description: 'bla bla',
+          description: 'Baking blog that contains some features I miss everytime I visit any existing baking blog. The blog was created as a one-day hackhaton project and gave me the chance learn more about useReducer.',
           tech: 'React, REST',
           github: '',
           link: '',
@@ -64,7 +65,7 @@ export default {
           backend: 'https://github.com/b-zuj/recipes-blog-backend',
         },
         'SPA gallery page': {
-          description: 'bla bla',
+          description: 'A simple single page application allowing users to search photos by key word. The page was created during Salt course together with Maciej Głowacki and Stian Klasbu.',
           tech: 'Vanila JS, REST',
           github: '',
           link: 'https://spa-gallery-frontend.netlify.app/',
@@ -72,7 +73,7 @@ export default {
           backend: 'https://github.com/b-zuj/spa-gallery-backend',
         },
         'ToDo app': {
-          description: 'bla bla',
+          description: 'A classic to-do list application storing to-dos in local storage. It was a weekend project done to learn basics of React.',
           tech: 'React',
           github: 'https://github.com/b-zuj/todo-react',
           link: '',
