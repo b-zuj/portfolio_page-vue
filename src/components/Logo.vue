@@ -1,8 +1,16 @@
 <template>
-  <div v-for="(element, index) in content" v-bind:key="index">
-      {{ element }}
-      <img v-bind:src="logos[`${element.toLowerCase()}`]" v-bind:alt="element" height="50">
-  </div>
+  <figure 
+    v-for="(element, index) in content"
+    v-bind:key="index" 
+    class="logo"
+  >
+    <img 
+      v-bind:src="logos[`${element.toLowerCase()}`]" 
+      v-bind:alt="element" 
+      height="50"
+    >
+    <figcaption>{{ element }}</figcaption>
+  </figure>
 </template>
 
 <script>
@@ -42,10 +50,56 @@ export default {
   },
   mounted () { 
       console.log(this.content)
-    }
+  }
 }
 </script>
 
-<style>
+<style scoped>
+figure {
+  width: 5rem;
+  height: 5rem;
+  padding: 0.8rem;
+  /* background-color: aliceblue; */
+  border-style: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+  margin-block-start: 0;
+  margin-block-end: 0.3rem;
+}
+
+img {
+  height: 4rem;
+}
+
+figure:hover {
+  background-color: #0C5887;
+}
+
+figcaption {
+  size: 1rem;
+  color: white;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  figure {
+    /* padding: 5px;
+    height: 70px;
+    width: 70px; */
+    margin-inline-start: 0.3rem;
+    margin-inline-end: 0.3rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  img {
+    height: 4rem;
+  }
+}
 
 </style>
