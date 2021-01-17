@@ -103,48 +103,48 @@ export default {
 }
 
 #city1 {
-  fill: black;
+  fill: white;
   transform: translateZ(.25px) scale(.75) translateY(-1vh);
 }
 
 #city2 {
-  fill: #12161e;
+  fill: #7CC6F4;
   transform: translateZ(0px) scale(1) translateY(-1vh);
 }
 
 #city3 {
-  fill: #19202f;
+  fill: #0C5887;
   transform: translateZ(-.25px) scale(1.25) translateY(-1vh);
 }
 
 #city4 {
-  fill: #222032;
+  fill: #083D5E;
   transform: translateZ(-.5px) scale(1.5) translateY(-1vh);
 }
 
 #city5 {
-  fill: #15172a;
+  fill: #001E30;
   transform: translateZ(-.75px) scale(1.75) translateY(-1vh);
 }
 
 #mountain1 {
-  fill: #202a5c;
+  fill: #083D5E;
   transform: translateZ(-2.25px) scale(3.25) translateY(-1vh);
 }
 
 #mountain2 {
-  fill: #4a4d82;
+  fill: #0C5887;
   transform: translateZ(-2.5px) scale(3.5) translateY(-1vh);
 }
 
 #mountain3 {
-  fill: #5f5d99;
+  fill: #0369A8;
   transform: translateZ(-3px) scale(4) translateY(-10vh);
 	height: 50vh;
 }
 
 #mountain4 {
-  fill: #8a7d9e;
+  fill: #7CC6F4;
   transform: translateZ(-3.5px) scale(4.5) translateY(-20vh);
 	height: 30vh;
 }
@@ -156,7 +156,7 @@ export default {
 }
 
 .city2-front {
-  background: #12161e;
+  background: #7CC6F4;
   width: 100vw;
   height: 30vh;
   position: relative;
@@ -166,7 +166,7 @@ export default {
 .city-front {
   position: relative;
   margin-top: -5px;
-  background-color: black;
+  background-color: white;
   width: 100vw;
   height: 125vh;
 }

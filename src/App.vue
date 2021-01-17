@@ -120,6 +120,7 @@ section {
 }
 
 section.parallax {
-  background-image: url(https://sgl-assets.imgix.net/files/article_hero/northern-lights-aurora-borealis-fairbanks-alaska-via-magazine-aaa-bucket-list-experience-shutterstock_695456167.jpg?w=1440&h=720&crop=faces,edges);
+  background-image: url(https://s3.eu-west-1.amazonaws.com/mundy.assets.d3r.com/images/hero_large/62475-northern-lights-cruises-lofoten-norway.jpg);
+  background-position: 0 -110px;
 }
 </style>
