@@ -119,8 +119,9 @@ section {
   width: 100%;
 }
 
-section.parallax {
+/* section.parallax {
   background-image: url(https://s3.eu-west-1.amazonaws.com/mundy.assets.d3r.com/images/hero_large/62475-northern-lights-cruises-lofoten-norway.jpg);
+  background-size: cover;
   background-position: 0 -110px;
-}
+} */
 </style>

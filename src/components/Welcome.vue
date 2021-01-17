@@ -24,7 +24,7 @@ h1, p {
   left: 0;
   right: 0;
   z-index: 5;
-  color: #C3E5FA;
+  color: #0A0F12;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
