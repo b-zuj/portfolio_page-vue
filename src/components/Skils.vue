@@ -18,22 +18,17 @@ export default {
   components: {
     Logo
   },
-  
   props: {
     content: {
       type: Object,
       default: () => ({})
     },
-  },
-  mounted () { 
-      console.log(this.content)
-    }
+  }
 }
 </script>
 
 <style scoped>
 table {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
