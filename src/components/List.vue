@@ -20,5 +20,12 @@ export default {
 </script>
 
 <style>
+ul {
+  list-style-type: circle;
+  padding-inline-start: 20px;
+}
 
+li {
+  padding-bottom: 1rem;
+}
 </style>

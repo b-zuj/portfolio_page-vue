@@ -18,7 +18,7 @@ const aws = require('../assets/logos/aws.png')
 const css3 = require('../assets/logos/css3.png')
 const eslint = require('../assets/logos/eslint.png')
 const express = require('../assets/logos/express.png')
-const github = require('../assets/logos/github.png')
+const github = require('../assets/logos/github-black.png')
 const heroku = require('../assets/logos/heroku.png')
 const html5 = require('../assets/logos/html5.png')
 const javascript = require('../assets/logos/javascript.png')
@@ -47,9 +47,6 @@ export default {
     return {
       logos
     }
-  },
-  mounted () { 
-      console.log(this.content)
   }
 }
 </script>
@@ -59,7 +56,6 @@ figure {
   width: 5rem;
   height: 5rem;
   padding: 0.8rem;
-  /* background-color: aliceblue; */
   border-style: none;
   border-radius: 5px;
   display: flex;

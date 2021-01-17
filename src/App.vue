@@ -2,11 +2,7 @@
 
 
   <section class="parallax">
-    <Parallax />
-  </section>
-
-  <section>
-    <Welcome :content="welcomeMsg" />
+    <Parallax :content="welcomeMsg" />
   </section>
 
   <section>
@@ -19,7 +15,7 @@
     <Projects :content="projectsData" />
   </section>
   <section>
-    contacts?
+    <Contact :content="contactLinks" />
   </section>
 
 </template>
@@ -27,19 +23,19 @@
 <script>
 import jsonData from './assets/data.json'
 import Parallax from './components/Parallax.vue'
-import Welcome from './components/Welcome.vue'
 import Introduction from './components/Introduction.vue'
 import Skils from './components/Skils.vue'
 import Projects from './components/Projects.vue'
+import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
   components: {
     Parallax,
-    Welcome,
     Introduction,
     Skils,
-    Projects
+    Projects,
+    Contact
   },
   data() {
     return {
@@ -50,9 +46,6 @@ export default {
       contactLinks: jsonData.data.contactLinks,
     }
   },
-  mounted () {
-    console.log(jsonData.data.welcomeMsg)
-  }
 }
 </script>
 
@@ -63,14 +56,13 @@ export default {
 */
 
 html, body, div, span, applet, object, iframe, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
+caption, tbody, tfoot, thead, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
@@ -87,9 +79,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-}
-ol, ul {
-	list-style: none;
 }
 blockquote, q {
 	quotes: none;

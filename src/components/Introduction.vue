@@ -2,11 +2,11 @@
   <h2>Fact sheet</h2>
   <table>
     <tr v-for="(value, propertyName, index) in content" v-bind:key="index">
-      <th>{{ propertyName }}:</th>
-      <th v-if="Array.isArray(value)">
+      <th class="label">{{ propertyName }}:</th>
+      <th v-if="Array.isArray(value)" class="list">
         <List :content="value" />
       </th>
-      <th v-else>{{ value }}</th>
+      <th v-else class="content">{{ value }}</th>
     </tr>
   </table>
 </template>
@@ -32,5 +32,41 @@ export default {
 </script>
 
 <style>
+table {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
 
+tr {
+  /* border-bottom-style: solid;
+  border-bottom-width: .1px; 
+  border-color: rgb(204, 204, 204); */
+}
+
+th.label {
+  padding-top: 1.5rem;
+}
+
+th.content {
+  margin-left: 3rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 6rem;
+}
+
+th.list {
+  padding-top: 1.5rem;
+  padding-left: 6rem;
+}
+
+th {
+  text-align: left;
+  vertical-align: top;
+}
 </style>
