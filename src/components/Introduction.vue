@@ -32,21 +32,16 @@ export default {
 </script>
 
 <style>
+h2 {
+  margin-top: 0.83em;
+  margin-block-start: 0;
+}
+
 table {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
   font-size: 1rem;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; */
-}
-
-tr {
-  /* border-bottom-style: solid;
-  border-bottom-width: .1px; 
-  border-color: rgb(204, 204, 204); */
 }
 
 th.label {
