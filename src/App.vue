@@ -2,48 +2,26 @@
 
 
   <section class="parallax">
-    <Parallax :content="welcomeMsg" />
+    <Parallax :content="jsonData" />
   </section>
 
-  <section>
-    <Introduction :content="factSheetData" />
-  </section>
-  <section>
-    <Skils :content="webTechSkils" />
-  </section>
-  <section>
-    <Projects :content="projectsData" />
-  </section>
-  <section>
-    <Contact :content="contactLinks" />
-  </section>
+
 
 </template>
 
 <script>
 import jsonData from './assets/data.json'
 import Parallax from './components/Parallax.vue'
-import Introduction from './components/Introduction.vue'
-import Skils from './components/Skils.vue'
-import Projects from './components/Projects.vue'
-import Contact from './components/Contact.vue'
+
 
 export default {
   name: 'App',
   components: {
-    Parallax,
-    Introduction,
-    Skils,
-    Projects,
-    Contact
+    Parallax
   },
   data() {
     return {
-      welcomeMsg: jsonData.data.welcomeMsg,
-      factSheetData: jsonData.data.factSheetData,
-      projectsData: jsonData.data.projectsData,
-      webTechSkils: jsonData.data.webTechSkils,
-      contactLinks: jsonData.data.contactLinks,
+      jsonData,
     }
   },
 }
@@ -102,11 +80,7 @@ table {
   /* background-color: #C3E5FA; */
 }
 
-section {
-  /* height: 120%; */
-  min-height: 100vh;
-  width: 100%;
-}
+
 
 /* section.parallax {
   background-image: url(https://s3.eu-west-1.amazonaws.com/mundy.assets.d3r.com/images/hero_large/62475-northern-lights-cruises-lofoten-norway.jpg);

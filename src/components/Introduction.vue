@@ -32,6 +32,11 @@ export default {
 </script>
 
 <style>
+h2 {
+  margin-top: 0.83em;
+  margin-block-start: 0;
+}
+
 table {
   width: 70%;
   margin-left: auto;
