@@ -80,12 +80,12 @@
           "Vue"
        ],
        "other":[
-          "GitHub",
           "ESlint",
           "Mocha",
           "Netlify",
           "Heroku",
-          "AWS"
+          "AWS",
+          "GitHub"
        ]
     },
     "contactLinks":{
