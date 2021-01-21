@@ -1,7 +1,4 @@
 <template>
-  <!-- <h2>{{ introduction.msg }}</h2> -->
-  
-  <!-- <h2>{{ introduction.msg2 }}</h2> -->
   <h2>About</h2>
   <table>
     <th colspan="2">
@@ -98,7 +95,6 @@ th.content {
 }
 
 th.list {
-  /* padding-top: 1.5rem; */
   padding-left: 6rem;
 }
 

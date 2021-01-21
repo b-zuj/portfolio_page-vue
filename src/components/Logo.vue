@@ -22,7 +22,6 @@ const github = require('../assets/logos/github-black.png');
 const heroku = require('../assets/logos/heroku.png');
 const html5 = require('../assets/logos/html5.png');
 const javascript = require('../assets/logos/javascript.png');
-const linkedin = require('../assets/logos/linkedin.png');
 const mocha = require('../assets/logos/mocha.png');
 const mongodb = require('../assets/logos/mongodb.png');
 const netlify = require('../assets/logos/netlify.png');
@@ -42,7 +41,6 @@ const logos = {
   'heroku': heroku,
   'html5': html5,
   'javascript': javascript,
-  'linkedin': linkedin,
   'mocha': mocha,
   'mongodb': mongodb,
   'netlify': netlify,

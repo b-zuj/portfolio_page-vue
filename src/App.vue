@@ -28,7 +28,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,dl, dt, dd, ol,
 fieldset, form, label, legend,
 caption, tbody, tfoot, thead, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, header, hgroup, 
 menu, nav, output, ruby, summary,
 time, mark, audio, video {
 	margin: 0;
