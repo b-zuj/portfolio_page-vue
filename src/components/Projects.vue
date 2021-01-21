@@ -12,8 +12,8 @@
 </template>
 
 <script>
-const github = require('../assets/logos/github-white.png')
-const www = require('../assets/logos/www.png')
+const github = require('../assets/logos/github-white.png');
+const www = require('../assets/logos/www.png');
 
 export default {
   name: 'Projects',
@@ -26,10 +26,10 @@ export default {
   data () {
     return {
       github,
-      www
+      www,
     }
   },
-}
+};
 </script>
 
 <style scoped>

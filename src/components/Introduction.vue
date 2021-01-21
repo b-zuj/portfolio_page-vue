@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import List from './List.vue'
+import List from './List.vue';
 
 export default {
   name: 'Introduction',
   components: {
-    List
+    List,
   },
   props: {
     content: {

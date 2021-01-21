@@ -4,9 +4,8 @@
 </template>
 
 <script>
-import jsonData from './assets/data.json'
-import Parallax from './components/Parallax.vue'
-
+import jsonData from './assets/data.json';
+import Parallax from './components/Parallax.vue';
 
 export default {
   name: 'App',
@@ -18,17 +17,15 @@ export default {
       jsonData,
     }
   },
-}
+};
 </script>
 
 <style>
-
 html, body, div, span, applet, object, iframe, blockquote, pre,
 abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol,
+b, u, i, center,dl, dt, dd, ol,
 fieldset, form, label, legend,
 caption, tbody, tfoot, thead, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 

@@ -90,10 +90,10 @@
 </template>
 
 <script>
-import Introduction from './Introduction.vue'
-import Skils from './Skils.vue'
-import Projects from './Projects.vue'
-import Contact from './Contact.vue'
+import Introduction from './Introduction.vue';
+import Skils from './Skils.vue';
+import Projects from './Projects.vue';
+import Contact from './Contact.vue';
 
 export default {
   name: 'Parallax',
@@ -101,7 +101,7 @@ export default {
     Introduction,
     Skils,
     Projects,
-    Contact
+    Contact,
   },
   props: {
     content: {
@@ -118,7 +118,7 @@ export default {
       contactLinks: this.content.data.contactLinks,
     }
   },
-}
+};
 </script>
 
 <style scoped>

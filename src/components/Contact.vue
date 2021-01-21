@@ -9,9 +9,9 @@
 </template>
 
 <script>
-const github = require('../assets/logos/github-black.png')
-const linkedin = require('../assets/logos/linkedin.png')
-const email = require('../assets/logos/email.png')
+const github = require('../assets/logos/github-black.png');
+const linkedin = require('../assets/logos/linkedin.png');
+const email = require('../assets/logos/email.png');
 
 
 export default {
@@ -26,13 +26,13 @@ export default {
     return {
       github,
       email,
-      linkedin
+      linkedin,
     }
   },
   mounted () {
-    console.log(this.content)
+    console.log(this.content);
   }
-}
+};
 </script>
 
 <style>

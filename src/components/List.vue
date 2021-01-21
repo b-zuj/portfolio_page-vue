@@ -12,11 +12,8 @@ export default {
       type: Object,
       default: () => ({})
     },
-  },
-  mounted () { 
-      console.log('List received content')
-    }
-}
+  }
+};
 </script>
 
 <style>
