@@ -23,7 +23,7 @@ export default {
 <style>
 html, body, div, span, applet, object, iframe, blockquote, pre,
 abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, em, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,dl, dt, dd, ol,
 fieldset, form, label, legend,

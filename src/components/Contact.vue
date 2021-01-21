@@ -1,5 +1,5 @@
 <template>
-  <h2>Contact me</h2>
+  <h2>Contact</h2>
   <article v-for="(value, propertyName, index) in content" v-bind:key="index">
     <a v-if="propertyName === 'GitHub'" v-bind:href="value.email"><img v-bind:src="email" height="40">barbara@zujewska.com</a>
     <br>

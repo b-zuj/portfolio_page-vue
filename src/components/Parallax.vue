@@ -2,13 +2,9 @@
   <div id="parallax" class="parallax">
 		<div class="group">
 
-      <h1>{{ welcomeMsg.heading }}</h1>
-
-			<!-- <div id="sun" class="layer">
-				<svg viewBox="-72 10 362 200" version="1.1">
-          <circle id="cSun" cy="45" cx="131" r="31"></circle>
-        </svg>
-			</div> -->
+      <div id="welcome" >
+        <h1>{{ welcomeMsg.heading }}</h1>
+      </div>
 
 			<div id="mountain4" class="layer">
 				<svg viewBox="-72 15 362 200" version="1.1">
@@ -69,7 +65,7 @@
         <div class="city-front limit">
           <div class="sections-wrapper">
             <section class="introduction fullpage">
-              <Introduction :content="factSheetData" />
+              <Introduction :introduction="introMsg" :content="factSheetData" />
             </section>
             <section class="skills fullpage">
               <Skils :content="webTechSkils" />
@@ -112,6 +108,7 @@ export default {
   data() {
     return {
       welcomeMsg: this.content.data.welcomeMsg,
+      introMsg: this.content.data.introduction,
       factSheetData: this.content.data.factSheetData,
       projectsData: this.content.data.projectsData,
       webTechSkils: this.content.data.webTechSkils,
@@ -121,31 +118,43 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 @import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
-h1, h3 {
-  position: absolute;
+h1, h2, h3, h4 {
   font-family: 'Neucha', cursive;
 }
 
 h1 {
+  position: absolute;
   font-size: 5em;
-  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 h3 {
+  position: absolute;
   font-size: 1.7rem;
   margin-top: -5rem;
   margin-left: 3rem;
   text-align: left;
   margin-right: 10rem;
+}
+
+h4 {
+  font-size: 1.5rem;
 }
 
 .parallax {
@@ -171,7 +180,7 @@ h3 {
 
 #city1 {
   fill: white;
-  margin-top: -550px;
+  margin-top: -400px;
   transform: translateZ(.25px) scale(.75) translateY(-1vh);
 }
 
@@ -218,10 +227,8 @@ h3 {
 	height: 30vh;
 }
 
-#sun {
-  fill: #ff7e00;
-  transform: translateZ(-6px) scale(7) translateY(-25vh);
-	height: 25vh;
+#welcome {
+  transform: translateZ(-6px) scale(7) translateY(-35vh);
 }
 
 .city2-front {

@@ -1,8 +1,13 @@
 {
   "data": {
     "welcomeMsg":{
-       "heading":"Hi, I'm Barbara!",
-       "msg":"I'm a full stack web developer with keen interest in AI and Big Data."
+       "heading":"Hello!",
+       "msg":"I'm Barbara, a full stack web developer with keen interest in AI and Big Data.",
+       "msg2":"Keep scrolling if you want to get to know me better"
+    },
+    "introduction": {
+       "msg": "This is how I look like",
+       "msg2":"Useful facts about me..."
     },
     "factSheetData":{
        "Nationality":"Polish",
