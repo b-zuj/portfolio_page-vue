@@ -1,8 +1,7 @@
 <template>
-  <h2>My web development tools</h2>
+  <h2>Prefered web development tools</h2>
   <table>
     <tr v-for="(value, propertyName, index) in content" v-bind:key="index">
-      <!-- <th>{{ propertyName }}:</th> -->
       <th>
         <Logo :content="value" />
       </th>
@@ -11,12 +10,12 @@
 </template>
 
 <script>
-import Logo from './Logo.vue'
+import Logo from './Logo.vue';
 
 export default {
   name: 'Skils',
   components: {
-    Logo
+    Logo,
   },
   props: {
     content: {
@@ -24,7 +23,7 @@ export default {
       default: () => ({})
     },
   }
-}
+};
 </script>
 
 <style scoped>
@@ -33,7 +32,6 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 th {
@@ -44,6 +42,4 @@ th {
   align-items: center;
   margin-bottom: 1rem;
 }
-
-
 </style>
