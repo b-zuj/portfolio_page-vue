@@ -16,6 +16,12 @@ The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 - [Vue.js](https://vuejs.org/)
 - [Webpack](https://webpack.js.org/)
 
+## Development plan
+- cookies consent popup
+- navigation between sections
+- sections fullpage with scroll-snaping
+- contact form with custom backend
+
 ## Available Scripts
 In the project directory, you can run:
 
