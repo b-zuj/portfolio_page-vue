@@ -64,7 +64,7 @@
         <div class="city-front limit">
           <div class="sections-wrapper">
             <section class="introduction fullpage">
-              <Introduction :introduction="introMsg" :content="factSheetData" />
+              <Introduction :content="factSheetData" />
             </section>
             <section class="skills fullpage">
               <Skils :content="webTechSkils" />
@@ -107,7 +107,6 @@ export default {
   data() {
     return {
       welcomeMsg: this.content.data.welcomeMsg,
-      introMsg: this.content.data.introduction,
       factSheetData: this.content.data.factSheetData,
       projectsData: this.content.data.projectsData,
       webTechSkils: this.content.data.webTechSkils,
