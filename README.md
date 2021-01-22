@@ -9,7 +9,7 @@ This project was created with two goals in mind:
 
 ## Deployment
 
-The page is temporarly deploed on Netlify - [zujewska.com](https://zujewska.com/)
+The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 
 ## Tech/framework used
 <b>Built with</b>
