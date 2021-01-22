@@ -9,13 +9,12 @@ This project was created with two goals in mind:
 
 ## Deployment
 
-The page is temporarly deploed on Netlify - [bzuj-portfolio.netlify.app](https://bzuj-portfolio.netlify.app/)
-
-Once the project reaches satisfactory stage of development it will be moved to custom domain - zujewska.com.
+The page is temporarly deploed on Netlify - [zujewska.com](https://zujewska.com/)
 
 ## Tech/framework used
 <b>Built with</b>
 - [Vue.js](https://vuejs.org/)
+- [Webpack](https://webpack.js.org/)
 
 ## Available Scripts
 In the project directory, you can run:
