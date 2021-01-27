@@ -6,6 +6,7 @@
 This project was created with two goals in mind:
 1. create a page where I can present myself and my projects 
 2. learn Vue.js framework
+3. practice usage of complex css
 
 ## Deployment
 
@@ -17,6 +18,7 @@ The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 - [Webpack](https://webpack.js.org/)
 
 ## Development plan
+- improve page responsivness - focus parallax 
 - cookies consent popup
 - navigation between sections
 - sections fullpage with scroll-snaping
