@@ -2,9 +2,9 @@
   <div id="parallax" class="parallax">
 		<div class="group">
 
-      <div id="welcome" >
+      <!-- <div id="welcome" >
         <h1>{{ welcomeMsg.heading }}</h1>
-      </div>
+      </div> -->
 
 			<div id="mountain4" class="layer">
 				<svg viewBox="-72 15 362 200" version="1.1">
