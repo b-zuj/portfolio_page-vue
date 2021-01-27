@@ -18,7 +18,7 @@ The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 - [Webpack](https://webpack.js.org/)
 
 ## Development plan
-- improve page responsivness - focus parallax 
+- improve page responsivness - focus on parallax 
 - cookies consent popup
 - navigation between sections
 - sections fullpage with scroll-snaping
