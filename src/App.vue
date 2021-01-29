@@ -5,8 +5,7 @@
 
 <script>
 import jsonData from './assets/data.json';
-import Parallax from './components/Parallax.vue';
-
+import Parallax from './components/Parallaxpng.vue';
 export default {
   name: 'App',
   components: {
@@ -17,6 +16,16 @@ export default {
       jsonData,
     }
   },
+  // created() {
+  //   var scripts = [
+  //     "./parallax.js"
+  //   ];
+  //   scripts.forEach(script => {
+  //     let tag = document.createElement("script");
+  //     tag.setAttribute("src", script);
+  //     document.head.appendChild(tag);
+  //   });
+  // }
 };
 </script>
 
@@ -37,16 +46,13 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
-
 body {
 	line-height: 1;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -54,5 +60,16 @@ table {
   text-align: center;
   color: #2c3e50;
 }
-
 </style>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
