@@ -24,7 +24,6 @@ The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 - sections fullpage with scroll-snaping
 - contact form with custom backend
 
-## Development plan
 **Currently working on:**
 - replacing svg for png in parallax and adding jquery script to handle scrolling
 
