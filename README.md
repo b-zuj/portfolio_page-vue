@@ -26,6 +26,7 @@ The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 
 **Currently working on:**
 - replacing svg for png in parallax
+- cleaning up css
 
 ## Available Scripts
 In the project directory, you can run:
