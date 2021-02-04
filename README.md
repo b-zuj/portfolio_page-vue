@@ -25,7 +25,7 @@ The page is deploed on Netlify - [zujewska.com](https://zujewska.com/)
 - contact form with custom backend
 
 **Currently working on:**
-- replacing svg for png in parallax and adding jquery script to handle scrolling
+- replacing svg for png in parallax
 
 ## Available Scripts
 In the project directory, you can run:
