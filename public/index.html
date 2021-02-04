@@ -4,16 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon-16x16.png">
     <link rel="manifest" href="<%= BASE_URL %>site.webmanifest">
-<!--     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-KJ44RMP');</script> -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1820DC285"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -24,97 +18,10 @@
     <title>Barbara Zujewska</title>
   </head>
   <body>
-<!--     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ44RMP"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
-    <script type="text/javascript">
-    function castParallax() {
-
-var opThresh = 350;
-var opFactor = 750;
-
-/*
-$(window).scroll(function(){
-  var windowScroll = $(window).scrollTop();
-  
-  $('.keyart_layer.parallax').each(function(){
-    var $layer = $(this);
-    var yPos = -(windowScroll * $layer.data('speed') / 100);
-    $layer.css({
-      "transform" : "translate3d(0px, " + yPos + "px, 0px)"
-    });
-
-  });
-
-
-  var backgroundOpacity = (windowScroll > opThresh ? (windowScroll - opThresh) / opFactor : 0);
-  $('#keyart-scrim').css('opacity', backgroundOpacity);
-});
-
-*/
-window.addEventListener("scroll", function(event){
-
-  var top = this.pageYOffset;
-
-  var layers = document.getElementsByClassName("parallax");
-  var layer, speed, yPos;
-  for (var i = 0; i < layers.length; i++) {
-    layer = layers[i];
-    speed = layer.getAttribute('data-speed');
-    var yPos = -(top * speed / 100);
-    layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
-
-  }
-});
-
-
-}
-
-function dispelParallax() {
-$("#nonparallax").css('display','block');
-$("#parallax").css('display','none');
-}
-
-function castSmoothScroll() {
-$.srSmoothscroll({
-  step: 80,
-  speed: 300,
-  ease: 'linear'
-});
-}
-
-
-
-function startSite() {
-
-var platform = navigator.platform.toLowerCase();
-var userAgent = navigator.userAgent.toLowerCase();
-
-if ( platform.indexOf('ipad') != -1  ||  platform.indexOf('iphone') != -1 ) 
-{
-  dispelParallax();
-}
-
-else if (platform.indexOf('win32') != -1 || platform.indexOf('linux') != -1)
-{
-  castParallax();					
-  if ($.browser.webkit)
-  {
-    //castSmoothScroll();
-  }
-}
-
-else
-{
-  castParallax();
-}
-
-}
-
-document.body.onload = startSite();
-    </script>
+    <script async src="<%= BASE_URL %>parallax.js"></script>
   </body>
 </html>

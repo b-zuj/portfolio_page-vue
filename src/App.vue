@@ -30,6 +30,7 @@ export default {
 </script>
 
 <style>
+/* @import './css/reset.css'; */
 html, body, div, span, applet, object, iframe, blockquote, pre,
 abbr, acronym, address, big, cite, code,
 del, dfn, em, ins, kbd, q, s, samp,
@@ -53,6 +54,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -60,16 +62,6 @@ table {
   text-align: center;
   color: #2c3e50;
 }
+
 </style>
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+

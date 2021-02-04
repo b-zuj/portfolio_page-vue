@@ -11,8 +11,6 @@
     >
     <figcaption>{{ element }}</figcaption>
   </figure>
-
-  <img src="'../assets/logos/aws.png'">
 </template>
 
 <script>
