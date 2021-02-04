@@ -1,15 +1,15 @@
 <template>
-  <h2>About</h2>
-  <table>
-    <th colspan="2">
-      <img v-bind:src="profile" alt="Barbara Zujewska - profile">
+  <h2 class="section__h2">About</h2>
+  <table class="section__table">
+    <th class="table__th table__th--profile" colspan="2">
+      <img class="th__img" v-bind:src="profile" alt="Barbara Zujewska - profile">
     </th>
-    <tr v-for="(value, propertyName, index) in content" v-bind:key="index">
-      <th class="label">{{ propertyName }}:</th>
-      <th v-if="Array.isArray(value)" class="list">
+    <tr class="table__tr" v-for="(value, propertyName, index) in content" v-bind:key="index">
+      <th class="tr__th tr__th--label">{{ propertyName }}:</th>
+      <th v-if="Array.isArray(value)" class="tr__th tr__th--list">
         <List :content="value" />
       </th>
-      <th v-else class="content">{{ value }}</th>
+      <th v-else class="tr__th tr__th--content">{{ value }}</th>
     </tr>
   </table>
 </template>
@@ -42,23 +42,15 @@ export default {
 </script>
 
 <style scoped>
-h2 {
-  margin-block-start: 0;
+
+.section__h2 {
   width: 70%;
   margin: 0 auto 0;
-  padding-top: 0.8rem;
-  padding-bottom: 9rem;
+  /* padding-top: 0.8rem;
+  padding-bottom: 9rem; */
 }
 
-img {
-  position: absolute;
-  height: 15rem;
-  border-radius: 50%;
-  right: 15%;
-  top: 12%;
-}
-
-table {
+.section__table {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -69,46 +61,59 @@ table {
   grid-row-end: 3;
 }
 
-/* table tr {
-  border-bottom: thin solid #0C5887;
-} */
-
-/* table tr:last-child {
-  border: 0;
-} */
-
-th {
+.tr__th {
   text-align: left;
   vertical-align: top;
   font-weight: normal;
+  padding-top: 1rem;
 }
 
-th.label {
-  padding-top: 1.5rem;
+.th__img {
+  /* position: absolute; */
+  height: 15rem;
+  border-radius: 50%;
+  right: 15%;
+  top: 12%;
+  position: relative;
+  display: block;
+  margin: 10px 0 -70px auto;
+  text-align: right;
+  right: auto;
+  top: auto;
+}
+
+.tr__th--label {
   font-weight: 800;
 }
 
-th.content {
+.tr__th--content {
   margin-left: 3rem;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   padding-left: 6rem;
 }
 
-th.list {
+.tr__th--list {
   padding-left: 6rem;
+}
+
+.table__tr {
+  border-bottom: 5px solid #0C5887;
+}
+
+.table__tr:last-child {
+  border: 0;
 }
 
 
 @media screen and (max-width: 1000px) {
-  h2 {
+  .section__h2 {
   padding-bottom: 1rem;
   }
 
-  img {
+  .th__img {
     position: relative;
     display: block;
-    margin: 10px auto 0;
+    margin: 10px auto 10px;
     text-align: center;
     right: auto;
     top: auto;
@@ -117,25 +122,18 @@ th.list {
 
 @media screen and (max-width: 800px) {
   
-  table {
+  .section__table {
     width: 90%
   }
 
-  th.label {
-    padding-top: 1rem;
-  }
-
-  th.content {
+  .tr__th--content {
     margin-left: 3rem;
-    padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 3rem;
   }
 
-  th.list {
-    /* padding-top: 1rem; */
+  .tr__th--list {
     padding-left: 3rem;
-    
   }
 }
 </style>
