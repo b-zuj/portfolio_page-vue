@@ -43,10 +43,11 @@ export default {
 
 <style scoped>
 h2 {
-  /* margin-top: 0.83rem; */
   margin-block-start: 0;
   width: 70%;
-  margin: 0.83rem auto 0;
+  margin: 0 auto 0;
+  padding-top: 0.8rem;
+  padding-bottom: 9rem;
 }
 
 img {
@@ -100,6 +101,10 @@ th.list {
 
 
 @media screen and (max-width: 1000px) {
+  h2 {
+  padding-bottom: 1rem;
+  }
+
   img {
     position: relative;
     display: block;

@@ -5,8 +5,7 @@
 
 <script>
 import jsonData from './assets/data.json';
-import Parallax from './components/Parallax.vue';
-
+import Parallax from './components/Parallaxpng.vue';
 export default {
   name: 'App',
   components: {
@@ -17,10 +16,21 @@ export default {
       jsonData,
     }
   },
+  // created() {
+  //   var scripts = [
+  //     "./parallax.js"
+  //   ];
+  //   scripts.forEach(script => {
+  //     let tag = document.createElement("script");
+  //     tag.setAttribute("src", script);
+  //     document.head.appendChild(tag);
+  //   });
+  // }
 };
 </script>
 
 <style>
+/* @import './css/reset.css'; */
 html, body, div, span, applet, object, iframe, blockquote, pre,
 abbr, acronym, address, big, cite, code,
 del, dfn, em, ins, kbd, q, s, samp,
@@ -37,11 +47,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
-
 body {
 	line-height: 1;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -56,3 +64,4 @@ table {
 }
 
 </style>
+
