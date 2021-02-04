@@ -5,15 +5,14 @@
   
   <div class="keyart" id="nonparallax"></div>
   <div class="keyart" id="parallax">
-    <div class="keyart_layer parallax" id="keyart-0" data-speed="12" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer parallax" id="keyart-1" data-speed="18" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer parallax" id="keyart-2" data-speed="26" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer parallax" id="keyart-3" data-speed="36" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer parallax" id="keyart-4" data-speed="48" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer parallax" id="keyart-5" data-speed="58" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer parallax" id="keyart-6" data-speed="60" style="transform: translate3d(0px, 0px, 0px)"></div>
-    <div class="keyart_layer" id="keyart-scrim"></div>
-    <div class="keyart_layer parallax" id="keyart-7" data-speed="69" style="transform: translate3d(0px, 0px, 0px)"></div>
+    <div class="keyart_layer parallax" id="keyart-0" data-speed="12" style="transform: translateZ(-7px)"></div>
+    <div class="keyart_layer parallax" id="keyart-1" data-speed="18" style="transform: translateZ(-6px)"></div>
+    <div class="keyart_layer parallax" id="keyart-2" data-speed="26" style="transform: translateZ(-5px)"></div>
+    <div class="keyart_layer parallax" id="keyart-3" data-speed="36" style="transform: translateZ(-4px)"></div>
+    <div class="keyart_layer parallax" id="keyart-4" data-speed="48" style="transform: translateZ(-3px)"></div>
+    <div class="keyart_layer parallax" id="keyart-5" data-speed="58" style="transform: translateZ(-2px)"></div>
+    <div class="keyart_layer parallax" id="keyart-6" data-speed="60" style="transform: translateZ(-1px)"></div>
+    <img class="keyart_layer parallax" v-bind:src="background" id="keyart-7" data-speed="69" style="transform: translateZ(0px)"/>
     <div class="keyart_layer" id="keyart-8" data-speed="100"><h3>{{ welcomeMsg.msg }}</h3></div>	
     
   </div>
@@ -42,6 +41,7 @@ import Introduction from './Introduction.vue';
 import Skils from './Skils.vue';
 import Projects from './Projects.vue';
 import Footer from './Footer.vue';
+const background = require('../assets/parallax/8-skyline.png');
 
 export default {
   name: 'Parallax',
@@ -64,13 +64,14 @@ export default {
       projectsData: this.content.data.projectsData,
       webTechSkils: this.content.data.webTechSkils,
       contactLinks: this.content.data.contactLinks,
+      background,
     }
   },
 };
 </script>
 
 <style>
-@import './styles.css';
+@import '../css/styles.css';
 @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
 h1, h2, h3, h4 {

@@ -12,7 +12,6 @@
 
 <script>
 const background = require('../assets/footer.png');
-
 const github = require('../assets/logos/github-white.png');
 const linkedin = require('../assets/logos/linkedin-white.png');
 const email = require('../assets/logos/email-white.png');
@@ -32,9 +31,6 @@ export default {
       email,
       linkedin,
     }
-  },
-  mounted () {
-    console.log(this.content);
   }
 };
 </script>

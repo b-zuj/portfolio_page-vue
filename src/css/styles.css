@@ -1,46 +1,44 @@
 /* PARALLAX */
 
 .keyart, .keyart_layer {
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 #parallax {
 	display: none;
+
 }
 
 #nonparallax {
 	display: block;
-}
-
-#nonparallax {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto 100%;
-}
-
-.keyart {
-	position: relative;
-  z-index: 10;
-  background-color: #D4ECFA;
-}
-
-#nonparallax {
 	background-image: url('../assets/all-skyline-mobile.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
+	height: 100vh;
+}
+
+.keyart {
+	/* z-index: 10; */
+	/* position: relative; */
+  background-color: #D4ECFA;
 }
 
 .keyart_layer {
 	background-position: bottom center;
 	background-size: 100%;
 	background-repeat: no-repeat;
-	width: 100%;
+	padding-top: 80vh;
+	/* width: 100%; */
 	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .keyart_layer.parallax {
-	position: fixed;
+	/* position: fixed; */
 }
 
 #keyart-0 {
@@ -76,7 +74,7 @@
 }
 
 #keyart-8 {
-  background-image: url('../assets/parallax/9-skyline.png');
+  /* background-image: url('../assets/parallax/9-skyline.png'); */
 }
 
 
@@ -90,7 +88,11 @@
 		display: none;
 	}
 	#parallax {
-    display: block;
+		display: block;
+		perspective: 1px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		height: 100vh;
 	}
 
 }
