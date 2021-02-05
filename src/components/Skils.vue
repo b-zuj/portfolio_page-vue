@@ -1,8 +1,8 @@
 <template>
-  <h2>Preferred web development tools</h2>
-  <table>
-    <tr v-for="(value, propertyName, index) in content" v-bind:key="index">
-      <th>
+  <h2 class="section__h2">Prefered web development tools</h2>
+  <table class="section__table">
+    <tr class="table__tr" v-for="(value, propertyName, index) in content" v-bind:key="index">
+      <th class="tr__th">
         <Logo :content="value" />
       </th>
     </tr>
@@ -27,19 +27,16 @@ export default {
 </script>
 
 <style scoped>
-table {
+.section__table {
+  margin: 30px 0 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-th {
+.tr__th {
   display: flex;
-  flex-direction: row;
   flex-flow: wrap;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 </style>
