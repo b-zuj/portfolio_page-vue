@@ -20,23 +20,17 @@ export default {
 </script>
 
 <style>
-  * {
-    margin:0;
-    padding:0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
-  body {
-    font: 100% / 1.5 Arial;
-  }
+* {
+  margin:0;
+  padding:0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
 
-   /* centre the content in the parallax layers */
-  /* .page {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  } */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 </style>

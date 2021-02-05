@@ -43,17 +43,7 @@ export default {
 
 <style scoped>
 
-.section__h2 {
-  width: 70%;
-  margin: 0 auto 0;
-  /* padding-top: 0.8rem;
-  padding-bottom: 9rem; */
-}
-
 .section__table {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 1rem;
   grid-column-start: 2;
   grid-column-end: five;
@@ -69,17 +59,10 @@ export default {
 }
 
 .th__img {
-  /* position: absolute; */
   height: 15rem;
   border-radius: 50%;
-  right: 15%;
-  top: 12%;
-  position: relative;
   display: block;
   margin: 10px 0 -70px auto;
-  text-align: right;
-  right: auto;
-  top: auto;
 }
 
 .tr__th--label {
@@ -107,25 +90,15 @@ export default {
 
 @media screen and (max-width: 1000px) {
   .section__h2 {
-  padding-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
   .th__img {
-    position: relative;
-    display: block;
     margin: 10px auto 10px;
-    text-align: center;
-    right: auto;
-    top: auto;
   }
 }
 
-@media screen and (max-width: 800px) {
-  
-  .section__table {
-    width: 90%
-  }
-
+@media screen and (max-width: 700px) {
   .tr__th--content {
     margin-left: 3rem;
     padding-bottom: 1rem;
