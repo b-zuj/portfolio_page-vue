@@ -36,7 +36,7 @@
 <script>
 import Introduction from './Introduction.vue';
 import Skils from './Skils.vue';
-import Projects from './Projects.vue';
+import Projects from './ProjectsAlt.vue';
 import Footer from './Footer.vue';
 
 export default {
