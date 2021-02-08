@@ -1,5 +1,5 @@
 <template>
-<section class="main__section main__section--about">
+<section class="main__section main__section--about" id="About">
   <h2 class="section__h2">About</h2>
   <table class="section__table">
     <th class="table__th table__th--profile" colspan="2">
