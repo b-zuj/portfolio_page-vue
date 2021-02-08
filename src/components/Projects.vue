@@ -1,5 +1,5 @@
 <template>
-<section class="main__section main__section--projects">
+<section class="main__section main__section--projects" id="Projects">
   <h2 class="section__h2">Projects</h2>
   <div class="grid">
     <div v-for="(value, propertyName, index) in content" v-bind:key="index" class="project">

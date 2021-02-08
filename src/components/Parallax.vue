@@ -1,7 +1,8 @@
 <template>
+  
   <Navigation />
   <div class="parallax" id="parallax">
-    
+  
     <div class="parallax__layer parallax__layer--1" id="keyart-0"></div>
     <div class="parallax__layer parallax__layer--2" id="keyart-1"></div>
     <div class="parallax__layer parallax__layer--3" id="keyart-2"></div>
@@ -10,13 +11,14 @@
     <div class="parallax__layer parallax__layer--6" id="keyart-5"></div>
     <div class="parallax__layer parallax__layer--7" id="keyart-6"></div>
     <div class="parallax__layer parallax__layer--8" id="keyart-7"></div>
-    <div class="parallax__layer parallax__layer--9" id="keyart-8"></div>	
+    <div class="parallax__layer parallax__layer--9" id="keyart-8"></div>
+
     
     <Header :content="welcomeMsg" />
     
     <main class="main">
       <About :content="factSheetData" />
-      <Skils :content="webTechSkils" />
+      <Tools :content="webTechSkils" />
       <Projects :content="projectsData" />
       <Footer :content="contactLinks" />
     </main>
@@ -31,7 +33,7 @@
 import Navigation from './Navigation.vue'
 import Header from './Header.vue';
 import About from './About.vue';
-import Skils from './Skils.vue';
+import Tools from './Tools.vue';
 import Projects from './Projects.vue';
 import Footer from './Footer.vue';
 
@@ -41,7 +43,7 @@ export default {
     Navigation,
     Header,
     About,
-    Skils,
+    Tools,
     Projects,
     Footer,
   },
@@ -150,6 +152,7 @@ export default {
   width: 80%;
   max-width: 1100px;
   margin: 10vh auto 0;
+  padding-top: 70px;
 }
 
 .section__h2 {
