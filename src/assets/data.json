@@ -1,8 +1,8 @@
 {
   "data": {
     "welcomeMsg":{
-       "heading":"Hello!",
-       "msg":"I'm Barbara, a full-stack web developer with a keen interest in AI and Big Data."
+       "msg1":"Welcome to my page!",
+       "msg2":"I'm Barbara, a full-stack web developer with a keen interest in AI and Big Data."
     },
     "factSheetData":{
        "Location":"Oslo, Norway",

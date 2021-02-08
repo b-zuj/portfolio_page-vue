@@ -1,4 +1,5 @@
 <template>
+<section class="main__section main__section--about">
   <h2 class="section__h2">About</h2>
   <table class="section__table">
     <th class="table__th table__th--profile" colspan="2">
@@ -12,6 +13,7 @@
       <th v-else class="tr__th tr__th--content">{{ value }}</th>
     </tr>
   </table>
+</section>
 </template>
 
 <script>
@@ -19,7 +21,7 @@ import List from './List.vue';
 const profile = require('../assets/profile.jpg');
 
 export default {
-  name: 'Introduction',
+  name: 'About',
   components: {
     List,
   },

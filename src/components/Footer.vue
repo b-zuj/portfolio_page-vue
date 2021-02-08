@@ -1,4 +1,5 @@
 <template>
+<footer class="main__footer">
   <img class="background" v-bind:src="background">
   <div class="contact">
     <h4 class="header">Contact me: </h4>
@@ -8,6 +9,7 @@
       <a v-if="propertyName === 'LinkedIn'" v-bind:href="value"><img v-bind:src="linkedin" height="40"></a>
     </div>
   </div>
+</footer>
 </template>
 
 <script>
