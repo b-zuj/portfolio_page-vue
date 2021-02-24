@@ -27,6 +27,7 @@ export default {
   position: absolute;
   bottom: 5%;
   left: 10%;
+  right: 10%
 }
 
 .header__h1 {

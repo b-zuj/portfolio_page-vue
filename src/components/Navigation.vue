@@ -20,7 +20,7 @@ export default {
   },
   data() {
     return {
-      sections: ['About', 'Tools', 'Projects']
+      sections: ['About', 'Tools', 'Projects', 'Contact']
     }
   }
 }

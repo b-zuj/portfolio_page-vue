@@ -12,7 +12,6 @@
     <div class="parallax__layer parallax__layer--7" id="keyart-6"></div>
     <div class="parallax__layer parallax__layer--8" id="keyart-7"></div>
     <div class="parallax__layer parallax__layer--9" id="keyart-8"></div>
-
     
     <Header :content="welcomeMsg" />
     
