@@ -1,6 +1,6 @@
 <template>
 <section class="main__section main__section--tools" id="Tools">
-  <h2 class="section__h2">Prefered web development tools</h2>
+  <h2 class="section__h2">Preferred web development tools</h2>
   <table class="section__table">
     <tr class="table__tr" v-for="(value, propertyName, index) in content" v-bind:key="index">
       <th class="tr__th">

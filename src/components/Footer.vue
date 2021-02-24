@@ -1,12 +1,17 @@
 <template>
-<footer class="main__footer">
-  <img class="background" v-bind:src="background">
-  <div class="contact">
-    <h4 class="header">Contact me: </h4>
-    <div v-for="(value, propertyName, index) in content" v-bind:key="index" class="icons">
-      <a v-if="propertyName === 'email'" v-bind:href="`mailto:${value}`"><img v-bind:src="email" height="40"></a>
-      <a v-if="propertyName === 'GitHub'" v-bind:href="value"><img v-bind:src="github" height="40"></a>
-      <a v-if="propertyName === 'LinkedIn'" v-bind:href="value"><img v-bind:src="linkedin" height="40"></a>
+<footer class="main__footer" id="Contact">
+  <img class="footer__img" v-bind:src="background">
+  <div class="footer__div--content">
+    <div class="content__div--contact">
+      <h4 class="contact__header">Contact me: </h4>
+      <div v-for="(value, propertyName, index) in content" v-bind:key="index" class="contact__div--icons">
+        <a class="icons__a" v-if="propertyName === 'email'" v-bind:href="`mailto:${value}`"><img class="icons__img" v-bind:src="email" height="40"></a>
+        <a class="icons__a" v-if="propertyName === 'GitHub'" v-bind:href="value"><img class="icons__img" v-bind:src="github" height="40"></a>
+        <a class="icons__a" v-if="propertyName === 'LinkedIn'" v-bind:href="value"><img class="icons__img" v-bind:src="linkedin" height="40"></a>
+      </div>
+    </div>
+    <div class="content__div--copyrights">
+      <p>Copyright © 2021 - Barbara Zujewska</p>
     </div>
   </div>
 </footer>
@@ -38,37 +43,45 @@ export default {
 </script>
 
 <style scoped>
-.background {
+.footer__img {
   background-color: white;
-  margin-bottom: -100px;
+  margin-bottom: -10px;
   width: 100%;
 }
 
-.contact {
+.footer__div--content {
   position: absolute;
   width: 100%;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  /* margin-top: -10px; */
+  padding: 5% 0; 
   background-color: #083D5E;
 }
 
-.header {
+.content__div--contact {
+  float: right;
+  margin-right: 5%;
+}
+
+.contact__header {
   color: white;
   display: inline;
   vertical-align: middle;
   font-size: 20px;
   line-height: 28px;
   margin: 20px;
+  
 }
 
-.icons {
+.contact__div--icons {
   display: inline;
   vertical-align: top;
   font-size: 16px;
   line-height: 28px;
-  margin: 20px;
-  padding-bottom: 20px;
+  margin: 20px 20px 30px 20px;
+}
+
+.content__div--copyrights{
+  color: white;
+  
 }
   
 </style>
