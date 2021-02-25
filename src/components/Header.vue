@@ -13,9 +13,6 @@ export default {
       type: Object,
       default: () => ({})
     },
-  },
-  mounted(){
-    console.log(this.content)
   }
 }
 </script>
@@ -32,5 +29,15 @@ export default {
 
 .header__h1 {
   margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .header {
+    bottom: 2%;
+  }
+
+  .header__h1 {
+    margin-bottom: 5px;
+  }
 }
 </style>

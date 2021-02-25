@@ -52,13 +52,14 @@ export default {
 .footer__div--content {
   position: absolute;
   width: 100%;
-  padding: 5% 0; 
+  padding: 0 0 5%; 
   background-color: #083D5E;
 }
 
 .content__div--contact {
   float: right;
   margin-right: 5%;
+  padding-bottom: 20px;
 }
 
 .contact__header {
@@ -68,7 +69,6 @@ export default {
   font-size: 20px;
   line-height: 28px;
   margin: 20px;
-  
 }
 
 .contact__div--icons {
@@ -81,7 +81,14 @@ export default {
 
 .content__div--copyrights{
   color: white;
-  
+  position: absolute;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 20px;
 }
   
 </style>
