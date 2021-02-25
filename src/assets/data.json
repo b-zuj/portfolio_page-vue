@@ -1,14 +1,15 @@
 {
   "data": {
     "welcomeMsg":{
-       "heading":"Hello!",
-       "msg":"I'm Barbara, a full-stack web developer with a keen interest in AI and Big Data."
+       "msg1":"Welcome to my page!",
+       "msg2":"I'm Barbara, a full-stack web developer with a keen interest in AI and Big Data."
     },
     "factSheetData":{
        "Location":"Oslo, Norway",
        "Background": [
          "industrial management (BEng)",
-         "marketing and data analytics (Double MSc)"
+         "strategic marketing management (MSc)",
+         "marketing analytics and data science (MSc)"
       ],
       "Strong suits":[
          "I'm a quick learner with a can-do attitude - tell me what you need and I will figure out how to make it work.",

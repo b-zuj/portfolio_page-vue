@@ -1,23 +1,25 @@
 <template>
-  <h2>Projects</h2>
-  <div class="grid">
-    <div v-for="(value, propertyName, index) in content" v-bind:key="index" class="project">
-      <div class="name">
-        <h4>{{ propertyName }}</h4>
+<section class="main__section main__section--projects" id="Projects">
+  <h2 class="section__h2">Projects</h2>
+  <div class="section__div--grid">
+    <div v-for="(value, propertyName, index) in content" v-bind:key="index" class="grid__div--project">
+      <div class="project__div--name">
+        <h4 class="project__h4">{{ propertyName }}</h4>
       </div>
-      <div class="details">
-        <p>{{ value.description }}</p>
-        <div class="tech">
-          <h5>Tech:</h5>
-          <p>{{ value.tech }}</p>
+      <div class="project__div--details">
+        <p class="details__p--description">{{ value.description }}</p>
+        <div class="details__div--tech">
+          <h5 class="tech__h5">Tech:</h5>
+          <p class="tech__p">{{ value.tech }}</p>
         </div>
-        <a v-if="value.link" v-bind:href="value.link"><img v-bind:src="www" height="20">Project site</a>
-        <a v-if="value.github" v-bind:href="value.github"><img v-bind:src="github" height="20">GitHub repo</a>
-        <a v-if="value.frontend" v-bind:href="value.frontend"><img v-bind:src="github" height="20">Frontend repo</a>
-        <a v-if="value.backend" v-bind:href="value.backend"><img v-bind:src="github" height="20">Backend repo</a>
+        <a class="details__a" v-if="value.link" v-bind:href="value.link"><img v-bind:src="www" height="20">Project site</a>
+        <a class="details__a" v-if="value.github" v-bind:href="value.github"><img v-bind:src="github" height="20">GitHub repo</a>
+        <a class="details__a" v-if="value.frontend" v-bind:href="value.frontend"><img v-bind:src="github" height="20">Frontend repo</a>
+        <a class="details__a" v-if="value.backend" v-bind:href="value.backend"><img v-bind:src="github" height="20">Backend repo</a>
       </div>
     </div>
   </div>
+</section>
 </template>
 
 <script>
@@ -42,7 +44,7 @@ export default {
 </script>
 
 <style scoped>
-.grid {
+.section__div--grid {
   width: 100%;
   display: inline-grid;
   grid-template-columns: 10% auto 10%;
@@ -50,7 +52,7 @@ export default {
   justify-items: center;
 }
 
-.project {
+.grid__div--project {
   grid-column-start: 2;
   grid-column-end: 2;
 	background-color: #fff;
@@ -64,26 +66,26 @@ export default {
   max-width: 700px;
 }
 
-.name {
+.project__div--name {
 	background-color: #083D5E;
 	color: #fff;
 	padding: 20px;
 	width: 200px;
 }
 
-.details {
+.project__div--details {
 	padding: 20px;
 	position: relative;
 	width: 100%;
   text-align: start;
 }
 
-.details p {
+.details__p--description {
   margin-block-start: 0;
 }
 
-.tech h5,
-.tech p {
+.tech__h5,
+.tech__p {
   display: inline;
   vertical-align: top;
   font-size: 16px;
@@ -91,11 +93,11 @@ export default {
   text-align: start;
 }
 
-.tech h5 {
+.tech__h5 {
   padding-right: 15px;
 }
 
-a {
+.details__a {
   display: block;
   float: right;
   background-color: #0C5887;
@@ -111,7 +113,7 @@ a {
   justify-content: center
 }
 
-a:hover {
+.details__a:hover {
   background-color: #7CC6F4;
   color: #0C5887;
 }
@@ -121,25 +123,33 @@ img {
 }
 
 @media screen and (max-width: 720px) {
-  .grid {
-    grid-template-columns: 5% auto 5%;
+  .section__div--grid  {
+    grid-template-columns: 3% auto 3%;
   }
 
-  .project {
+  .grid__div--project {
     flex-direction: column;
-    min-width: 350px;
+    min-width: 400px;
   }
 
-  .name {
-    padding: 0;
+  .project__div--name {
+    padding: 10px;
     width: 100%;
   }
 
-  .details {
+  .project__div--details {
     padding: 10px;
     position: relative;
     width: auto;
     text-align: start;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .grid__div--project {
+    flex-direction: column;
+    min-width: 350px;
   }
 }
 </style>

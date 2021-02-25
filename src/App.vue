@@ -1,11 +1,11 @@
 <template>
   <Parallax :content="jsonData" />
-
 </template>
 
 <script>
+import Parallax from './components/Parallax.vue'
 import jsonData from './assets/data.json';
-import Parallax from './components/Parallaxpng.vue';
+
 export default {
   name: 'App',
   components: {
@@ -16,52 +16,21 @@ export default {
       jsonData,
     }
   },
-  // created() {
-  //   var scripts = [
-  //     "./parallax.js"
-  //   ];
-  //   scripts.forEach(script => {
-  //     let tag = document.createElement("script");
-  //     tag.setAttribute("src", script);
-  //     document.head.appendChild(tag);
-  //   });
-  // }
-};
+}
 </script>
 
 <style>
-/* @import './css/reset.css'; */
-html, body, div, span, applet, object, iframe, blockquote, pre,
-abbr, acronym, address, big, cite, code,
-del, dfn, em, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,dl, dt, dd, ol,
-fieldset, form, label, legend,
-caption, tbody, tfoot, thead, aside, canvas, details, embed, 
-figure, figcaption, header, hgroup, 
-menu, nav, output, ruby, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-body {
-	line-height: 1;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 </style>
-
