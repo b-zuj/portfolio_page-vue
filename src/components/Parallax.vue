@@ -12,7 +12,8 @@
     <div class="parallax__layer parallax__layer--7" id="keyart-6"></div>
     <div class="parallax__layer parallax__layer--8" id="keyart-7"></div>
     <div class="parallax__layer parallax__layer--9" id="keyart-8"></div>
-    
+    <div class="parallax__nonparallax"></div>
+
     <Header :content="welcomeMsg" />
     
     <main class="main">
@@ -65,6 +66,15 @@ export default {
 </script>
 
 <style>
+    
+.parallax__nonparallax {
+  display: none;
+  background-image: url(../assets/skyline-mobile.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .parallax {
   height: 100vh;
   overflow-x: hidden;
@@ -157,6 +167,22 @@ export default {
 .section__h2 {
   font-size: 2.2rem;
   margin: 0 auto 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    margin-top: 0;
+  }
+  
+  .parallax__nonparallax {
+    display: block;
+    position: relative;
+    height: 100vh;
+  }
+
+  .parallax__layer {
+    display: none;
+  }
 }
 
 </style>
