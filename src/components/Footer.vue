@@ -90,5 +90,19 @@ export default {
   text-align: center;
   bottom: 20px;
 }
+
+@media screen and (max-width: 720px) {
+  .icons__img {
+    height: 2rem;
+  }
+
+  .contact__div--icons {
+    margin: .7rem;
+  }
+
+  .content__div--contact {
+    padding-bottom: 40px;
+  }
+}
   
 </style>
