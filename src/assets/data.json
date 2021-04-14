@@ -20,6 +20,14 @@
        "Free time":"baking, traveling, jigsaw puzzles, obsessing over my cat"
     },
     "projectsData":{
+      "Snake game":{
+         "description":"Recreated the classic snake game to learn the basics of game programming and for fun.",
+         "tech":"Vanilla JS",
+         "github":"https://github.com/b-zuj/snake",
+         "link":"",
+         "frontend":"",
+         "backend":""
+      },
        "Portfolio page":{
           "description":"Created portfolio page to showcase me, my projects, and learn Vue in the process.",
           "tech":"Vue.js",
