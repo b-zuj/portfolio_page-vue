@@ -24,7 +24,7 @@
          "description":"Recreated the classic snake game to learn the basics of game programming and for fun.",
          "tech":"Vanilla JS",
          "github":"https://github.com/b-zuj/snake",
-         "link":"bzuj-snake.netlify.app",
+         "link":"https://bzuj-snake.netlify.app",
          "frontend":"",
          "backend":""
       },
@@ -40,7 +40,7 @@
           "description":"App for physiotherapists to connect and follow up with their patients. This is my final, two-week project at Salt created with Maciej Głowacki and Stian Klasbu.",
           "tech":"React, Redux, REST, MongoDB",
           "github":"",
-          "link":"",
+          "link":"https://phys-io.netlify.app/",
           "frontend":"https://github.com/MaciejGL/final-project-frontend",
           "backend":"https://github.com/MaciejGL/final-project-backend"
        },
